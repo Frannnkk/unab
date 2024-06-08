@@ -24,7 +24,7 @@ jobs:
       - name: Authenticate to Firebase
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase projects:list
+        run: firebase auth:login --token $FIREBASE_TOKEN
 
       - name: Deploy to Firebase
-        run: firebase deploy
+        run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
