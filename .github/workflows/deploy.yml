@@ -26,5 +26,8 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: firebase projects:list
 
+      - name: Use Project
+        run: firebase use --token "$FIREBASE_TOKEN" <test-f1e9a>
+      
       - name: Deploy to Firebase
         run: firebase deploy --token "$FIREBASE_TOKEN"
