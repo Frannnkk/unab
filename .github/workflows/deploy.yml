@@ -29,4 +29,4 @@ jobs:
     
       
       - name: Deploy to Firebase
-        run: firebase deploy --token "$FIREBASE_TOKEN"
+        run: firebase deploy --token "$FIREBASE_TOKEN" -P dev
