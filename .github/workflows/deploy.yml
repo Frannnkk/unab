@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install dependenciess
         run: yarn add 'Frannnkk/unab'
+
+
+      - name: Install dependencies
         run: npm install 'Frannnkk/unab'
 
 
