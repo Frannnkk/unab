@@ -22,10 +22,6 @@ jobs:
         run: yarn add 'Frannnkk/unab'
 
 
-      - name: Install dependencies
-        run: npm install 'Frannnkk/unab'
-
-
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
