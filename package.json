@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "build": "npm run build"
-    "build": "react-scripts build"
   },
   "dependencies": {
     "express": "^4.17.1"
