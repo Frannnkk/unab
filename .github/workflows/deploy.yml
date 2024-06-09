@@ -17,11 +17,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
+      run: |
+        cd functions
+        npm install
 
-      - name: Install NPM
-        run:
-          cd public
-          npm install
 
       - name: Install dependenciess
         run: yarn add 'Frannnkk/unab'
