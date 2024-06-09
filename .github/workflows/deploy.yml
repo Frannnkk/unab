@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - public
 
 jobs:
   build:
@@ -18,6 +17,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
+
+      - name: Install NPM
+        run:
+          cd public
+          npm install
 
       - name: Install dependenciess
         run: yarn add 'Frannnkk/unab'
