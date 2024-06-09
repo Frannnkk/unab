@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install Frannnkk/unab
+        run: npm install https://github.com/Frannnkk/unab.git
 
 
       - name: Install Firebase CLI
