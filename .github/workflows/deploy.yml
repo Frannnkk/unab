@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
 
      # Install npm packages and firebase
-      - name: Install npm packages
+      - name: Install npm package
         run: |
           cd public
           npm install
