@@ -21,10 +21,8 @@ jobs:
      # Install npm packages and firebase
       - name: Install npm package
         run: |
-          cd public
-          npm install 'Frannnkk/unab'
-          npm audit fix
-          npm install firebase-tools
+          cd public && npm install
+ 
           
       # Run tests
       - name: Run tests
