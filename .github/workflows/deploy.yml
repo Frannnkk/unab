@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - public
 
 jobs:
   build:
@@ -19,20 +18,23 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependenciess
-        run: yarn add 'Frannnkk/unab'
-
-
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-
-      - name: Authenticate to Firebase
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase projects:list
-
+     # Install npm packages and firebase
+      - name: Install npm package
+        run: |
+          cd public && npm install
+ 
+          
+      # Run tests
+      - name: Run tests
+        run: |
+          cd functions
+          npm run test
+          
+      # Deploying the functions to firebase
       - name: Deploy to Firebase
+        run: |
+          cd functions
+          npm run deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase deploy --token "$FIREBASE_TOKEN"
 
