@@ -22,7 +22,7 @@ jobs:
       - name: Install npm package
         run: |
           cd public
-          npm install
+          npm install 'Frannnkk/unab'
           npm audit fix
           npm install firebase-tools
           
