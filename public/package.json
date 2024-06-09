@@ -1,7 +1,7 @@
 {
   "name": "mi-proyecto",
   "version": "1.0.0",
-  "description": "Descripción de mi proyecto",
+  "description": "Descripciï¿½n de mi proyecto",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -14,5 +14,12 @@
     "nodemon": "^2.0.7"
   },
   "author": "Tu Nombre",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "unab"
+  },
+  "keywords": [
+    "Projecto"
+  ]
 }
