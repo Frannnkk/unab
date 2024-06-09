@@ -1,7 +1,6 @@
 {
   "name": "mi-proyecto",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "Descripción de mi proyecto",
   "main": "index.js",
   "scripts": {
@@ -17,15 +16,3 @@
   "author": "Tu Nombre",
   "license": "MIT"
 }
-=======
-  "private": true,
-  "scripts": {
-    "start": "live-server public",
-    "build": "echo 'No build necessary'",
-    "test": "echo 'No tests specified' && exit 0"
-  },
-  "dependencies": {
-    "live-server": "^1.2.1"
-  }
-}
->>>>>>> 31d0d540d4be33bc1a173c1381a5e4ecbd86b684
