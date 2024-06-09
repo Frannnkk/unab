@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "^4.17.1"
+    "name": "github:Frannnkk/Unab"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
